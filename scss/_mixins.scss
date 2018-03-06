@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:400&subset=vietnamese');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&subset=vietnamese');
 
 // Mixins
 @mixin transition-all() {
@@ -14,13 +14,13 @@
 }
 @mixin serif-font() {
   // font-family: 'Merriweather', 'Helvetica Neue', Arial, sans-serif;
-  font-family: 'Roboto Slab', serif;
+font-family: 'Roboto', sans-serif;
 
 
 }
 @mixin sans-serif-font() {
   // font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
-  font-family: 'Roboto Slab', serif;
+font-family: 'Roboto', sans-serif;
 
 
 }

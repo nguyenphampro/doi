@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Roboto+Slab:400&subset=vietnamese");
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&subset=vietnamese");
 body,
 html {
   width: 100%;
@@ -6,7 +6,7 @@ html {
 }
 
 body {
-  font-family: 'Roboto Slab', serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 hr {
@@ -36,7 +36,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Roboto Slab', serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 .bg-primary {
@@ -84,7 +84,7 @@ img::-moz-selection {
 #mainNav {
   border-bottom: 1px solid rgba(33, 37, 41, 0.1);
   background-color: #fff;
-  font-family: 'Roboto Slab', serif;
+  font-family: 'Roboto', sans-serif;
   -webkit-transition: all 0.2s;
   -moz-transition: all 0.2s;
   transition: all 0.2s;
@@ -94,7 +94,7 @@ img::-moz-selection {
   font-weight: 700;
   text-transform: uppercase;
   color: #39343A;
-  font-family: 'Roboto Slab', serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
@@ -104,18 +104,18 @@ img::-moz-selection {
 #mainNav .navbar-nav > li.nav-item > a.nav-link,
 #mainNav .navbar-nav > li.nav-item > a.nav-link:focus {
   font-size: .9rem;
-  font-weight: 700;
+  font-weight: 400;
   color: #212529;
 }
 
 #mainNav .navbar-nav > li.nav-item > a.nav-link:hover,
 #mainNav .navbar-nav > li.nav-item > a.nav-link:focus:hover {
-  color: #39343A;
+  color: #ffc107;
 }
 
 #mainNav .navbar-nav > li.nav-item > a.nav-link.active,
 #mainNav .navbar-nav > li.nav-item > a.nav-link:focus.active {
-  color: #39343A !important;
+  color: #ffc107 !important;
   background-color: transparent;
 }
 
@@ -140,7 +140,7 @@ img::-moz-selection {
   }
   #mainNav .navbar-nav > li.nav-item > a.nav-link:hover,
   #mainNav .navbar-nav > li.nav-item > a.nav-link:focus:hover {
-    color: #fff;
+    color: #ffc107;
   }
   #mainNav.navbar-shrink {
     border-bottom: 1px solid rgba(33, 37, 41, 0.1);
@@ -150,7 +150,7 @@ img::-moz-selection {
     color: #39343A;
   }
   #mainNav.navbar-shrink .navbar-brand:focus, #mainNav.navbar-shrink .navbar-brand:hover {
-    color: #39343a;
+    color: #ffc107;
   }
   #mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link,
   #mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link:focus {
@@ -158,14 +158,11 @@ img::-moz-selection {
   }
   #mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link:hover,
   #mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link:focus:hover {
-    color: #39343A;
+    color: #ffc107;
   }
 }
 
 header.masthead {
-  padding-top: 10rem;
-  padding-bottom: calc(10rem - 56px);
-  background-image: url("../img/cyn.jpg");
   background-position: center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -173,19 +170,26 @@ header.masthead {
   background-size: cover;
 }
 
+header.masthead .owl-carousel .item .my-auto, header.masthead .owl-stage-outer .item .my-auto, header.masthead .owl-stage .item .my-auto, header.masthead .owl-item .item .my-auto {
+  padding: 8rem 2rem 6rem 2rem;
+}
+
 header.masthead hr {
   margin-top: 30px;
   margin-bottom: 30px;
+  border-color: #000;
 }
 
 header.masthead h1 {
   font-size: 2rem;
-  color: #a96da9;
-  text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.5);
+  color: #FFC107;
+  text-shadow: 3px 3px 0 #000, 1px 1px 0 #000;
+  font-weight: 300;
 }
 
 header.masthead h1 span {
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.37);
+  font-weight: 500;
   color: white;
   display: block;
   font-size: 1rem;
@@ -194,7 +198,8 @@ header.masthead h1 span {
 
 header.masthead p {
   font-weight: 300;
-  color: #343a40;
+  color: #fff;
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.37);
 }
 
 @media (min-width: 768px) {
@@ -210,18 +215,30 @@ header.masthead p {
     padding-top: 0;
     padding-bottom: 0;
   }
+  header.masthead .owl-carousel, header.masthead .owl-stage-outer, header.masthead .owl-stage, header.masthead .owl-item {
+    height: 100%;
+  }
+  header.masthead .owl-carousel .item, header.masthead .owl-stage-outer .item, header.masthead .owl-stage .item, header.masthead .owl-item .item {
+    height: 100%;
+  }
+  header.masthead .owl-carousel .item .my-auto, header.masthead .owl-stage-outer .item .my-auto, header.masthead .owl-stage .item .my-auto, header.masthead .owl-item .item .my-auto {
+    transform: translateX(-50%) translateY(-50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+  }
   header.masthead h1 {
-    font-size: 3rem;
+    font-size: 3.6rem;
   }
   header.masthead h1 span {
     font-size: 1.5rem;
-    letter-spacing: 10px;
+    letter-spacing: 6px;
   }
 }
 
 @media (min-width: 1200px) {
   header.masthead h1 {
-    font-size: 4rem;
+    font-size: 5.6rem;
   }
 }
 
@@ -281,7 +298,7 @@ header.masthead p {
 .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category,
 .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
   padding: 0 15px;
-  font-family: 'Roboto Slab', serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category {
@@ -320,7 +337,7 @@ header.masthead p {
   text-transform: uppercase;
   border: none;
   border-radius: 300px;
-  font-family: 'Roboto Slab', serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 .btn-xl {
