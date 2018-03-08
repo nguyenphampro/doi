@@ -13,11 +13,14 @@ body {
 hr {
   max-width: 50px;
   border-width: 3px;
-  border-color: $primary;
+  border-color:  #f8c133;
 }
 
 hr.light {
   border-color: $white;
+}
+hr.dark {
+  border-color: black;
 }
 
 a {
@@ -34,7 +37,7 @@ h3,
 h4,
 h5,
 h6 {
-  @include sans-serif-font;
+  @include serif-new;
 }
 
 .bg-primary {
@@ -77,4 +80,14 @@ img::selection {
 img::-moz-selection {
   color: $white;
   background: transparent;
+}
+
+.footer {
+  background: url(../img/imgw.jpg)
+}
+
+footer {
+  background: url(../img/background-image-2.jpg) left center no-repeat;
+  background-size: cover;
+  padding: 6rem 0
 }
