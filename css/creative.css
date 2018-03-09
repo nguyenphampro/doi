@@ -102,6 +102,11 @@ footer {
   -webkit-transition: all 0.2s;
   -moz-transition: all 0.2s;
   transition: all 0.2s;
+  position: fixed;
+  top: -200px;
+  left: 0;
+  width: 100%;
+  z-index: 9999;
 }
 
 #mainNav:after {
@@ -117,6 +122,8 @@ footer {
 }
 
 #mainNav.navbar-shrink {
+  top: -0;
+  left: 0;
   border-bottom: 0;
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.15);
 }
