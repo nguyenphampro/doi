@@ -1090,7 +1090,7 @@ p.custom-field-class
     padding-top: 0;
 }
 
-.contact-form input[type=submit]
+.contact-form input[type=submit], .btnok
 {	
     color: #e54b76;
     display: inline-block;
@@ -1109,7 +1109,7 @@ p.custom-field-class
     transition: all .2s linear;
 }
 
-.contact-form input[type=submit]:hover
+.contact-form input[type=submit]:hover,  .btnok:hover
 {
     color: white;
     background-color: #e54b76;

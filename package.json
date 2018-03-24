@@ -28,6 +28,8 @@
     "dependencies": {
         "bootstrap": "4.0.0",
         "font-awesome": "4.7.0",
+        "gulp-autoprefixer": "^5.0.0",
+        "gulp-csscomb": "^3.0.8",
         "jquery": "3.3.1",
         "jquery.easing": "^1.4.1",
         "magnific-popup": "^1.1.0",
@@ -40,6 +42,7 @@
         "gulp-header": "2.0.1",
         "gulp-rename": "^1.2.2",
         "gulp-sass": "^3.1.0",
-        "gulp-uglify": "3.0.0"
+        "gulp-uglify": "3.0.0",
+        "gulp-htmlmin": "^4.0.0"
     }
 }
