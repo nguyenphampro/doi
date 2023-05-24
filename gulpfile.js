@@ -40,7 +40,7 @@ gulp.task('css:minify', function () {
 });
 
 // CSS
-gulp.task('css', ['css:minify']);
+gulp.task('css', gulp.series('css:minify'));
 
 // Minify JavaScript
 gulp.task('js:minify', function () {
@@ -63,10 +63,10 @@ gulp.task('html', function () {
 });
 
 // JS
-gulp.task('js', ['js:minify']);
+gulp.task('js', gulp.series('js:minify'));
 
 // Default task
-gulp.task('default', ['css', 'js', 'html']);
+gulp.task('default',gulp.series('css', 'js', 'html'));
 
 // Configure the browserSync task
 gulp.task('browserSync', function () {
@@ -78,7 +78,7 @@ gulp.task('browserSync', function () {
 });
 
 // Dev task
-gulp.task('dev', ['css', 'js', 'browserSync'], function () {
-  gulp.watch('./js/*.js', ['js']);
+gulp.task('dev', gulp.series('css', 'js', 'browserSync'), function () {
+  gulp.watch('./js/*.js', gulp.series('js'));
   gulp.watch('./*.html', browserSync.reload);
 });
